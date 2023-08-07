@@ -1,4 +1,4 @@
-## The quick & dirty intro to AI 
+## AI Basics
 
 #### What is AI in 2023?
 
