@@ -13,3 +13,5 @@ Mozilla has been developing and shipping AI through its products and initiatives
 But like many others, we also see the risk of real-world harm. We don’t have to cast our gazes to some far-flung science fiction future to envision it: people are already experiencing real-world impacts from this technology, right here and now.
 
 Much will depend on how this technology is developed and deployed, but it will also depend on who does it. We believe that the open source community has a critical role to play in ensuring that AI develops in a way that is responsible, trustworthy, equitable, and safe. We hope that this guide contributes to mobilizing the open source community to join us in this important work.
+
+[Next Section: AI Basics](/ai/content/ai-basics/)
