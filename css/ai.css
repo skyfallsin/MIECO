@@ -178,6 +178,16 @@
     footer ul {
         @apply underline sm:max-w-3xl mx-auto my-auto
     }
+
+}
+
+.card-figure {
+    border-radius: inherit !important;
+    margin: 0 !important;
+}
+
+.card-body {
+    @apply text-neutral-content !important
 }
 
 @tailwind utilities;
