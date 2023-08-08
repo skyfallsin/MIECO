@@ -38,8 +38,6 @@ npm run build
 
 The Webpack will output all HTML files to a folder called `dist`.
 
-Turn markdown to html: `tools/build_ai_guide.sh`
-
 ## Folder Hierarchy  
 
 All Nunjucks files are either located in the `templates/` folder or the `pages/` folder.
