@@ -81,4 +81,6 @@ Encoder: The encoder processes the input sequence into a context-dependent repre
 
 Each step in this process involves complex mathematical operations and transformations. But at a high-level, the goal is to convert text into a form that the model can understand, let the model process and generate a response, and then convert that response back into human-readable text.
 
-[Next Section: LLMs 101](/ai/content/llms-101/)
+<div class="text-right">
+    <a class="button-next-page" href="/ai/content/ai-basics">LLMs 101 &rarr;</a>
+</div>

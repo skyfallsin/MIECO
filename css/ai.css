@@ -46,11 +46,13 @@
     }
 
     .drawer-open .drawer-side {
-        @apply bg-white dark:bg-black w-full
+        @apply bg-white dark:bg-black 
+        /* @apply w-full */
     }
 
     .drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
-        @apply bg-white bg-opacity-100 dark:bg-black dark:text-white text-black h-full !important
+        @apply bg-white bg-opacity-100 dark:bg-black dark:text-white text-black !important
+        /* @apply h-full  */
     }
 
     .drawer-toggle:checked ~  #sidebar-close-btn {
@@ -62,11 +64,17 @@
     }
 
     ul.menu {
-        @apply w-full sm:w-72 mt-12 sm:mt-0
+        @apply mt-12 sm:mt-0 w-full
+        /* @apply w-full sm:w-72  */
     }
 
     ul.menu > li {
-        @apply leading-6 font-medium
+        @apply leading-6 font-medium w-full
+    }
+
+    ul.menu details {
+        /* width: 100%; */
+        @apply w-full
     }
 
     ul.menu > li.upcoming {
@@ -84,6 +92,7 @@
 
     ul.sub_menu > li {
         @apply leading-3 w-full
+        /* @apply w-full */
     }
 
     ul.menu > li:hover {
@@ -103,7 +112,15 @@
     }
 
     ul.sub_menu > li a {
-        @apply w-1/2
+        /* @apply w-1/2 */
+        white-space: normal;
+        line-height: 1.5em;
+        @apply w-full
+        
+    }
+
+    ul.sub_menu > li a {
+        text-wrap: wrap !important;
     }
 
     ul.sub_menu > li:hover a {
@@ -132,7 +149,7 @@
     }
 
     #content {
-        @apply prose pl-5 pr-5 md:pl-0 md:pr-0 sm:max-w-3xl text-black dark:text-white bg-base-100 mx-auto my-auto dark:bg-base-100 }
+        @apply prose pl-5 pr-5 sm:pl-0 sm:pr-0 sm:max-w-3xl text-black dark:text-white bg-base-100 mx-auto my-auto dark:bg-base-100 }
 
     #content h2 {
         @apply text-3xl font-medium mt-9 mb-5 text-inherit
