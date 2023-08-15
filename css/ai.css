@@ -44,7 +44,7 @@
 
     #header-content {
         /* @apply max-h-full max-w-full sm:max-h-80 sm:mx-auto */
-        @apply sm:max-w-3xl mx-auto my-auto w-full
+        @apply sm:max-w-3xl mx-auto my-auto w-full pl-5 pr-5 md:pl-0 md:pr-0
     }
 
     #header-title {
