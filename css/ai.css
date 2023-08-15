@@ -51,7 +51,8 @@
     }
 
     .drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
-        @apply bg-white bg-opacity-100 dark:bg-black dark:text-white text-black !important
+        /* @apply bg-white bg-opacity-100 dark:bg-black dark:text-white text-black !important */
+        @apply dark:text-white text-black !important
         /* @apply h-full  */
     }
 
@@ -60,12 +61,12 @@
     }
 
     img#sidebar-logo {
-        @apply w-32 mt-5 sm:mt-14 pl-5 sm:pl-6 !important
+        /* @apply w-32 mt-5 sm:mt-14 pl-5 sm:pl-6 !important */
+        @apply w-32 mt-5 sm:mt-14
     }
 
     ul.menu {
-        @apply mt-12 sm:mt-0 w-full
-        /* @apply w-full sm:w-72  */
+        @apply bg-white dark:bg-black mt-12 sm:mt-0 w-full sm:w-72  min-h-full
     }
 
     ul.menu > li {
@@ -109,6 +110,7 @@
     }
 
     ul.menu > li a {
+        white-space: normal !important;
         @apply text-black dark:text-white font-semibold
     }
 
@@ -140,16 +142,19 @@
     }
     
 
-    ul.sub_menu > li a {
+    ul.menu > li ul.sub_menu > li a {
         /* @apply w-1/2 */
-        white-space: normal;
         line-height: 1.5em;
-        text-wrap: wrap !important;
+        white-space: normal !important;
         @apply w-full pl-6 font-normal
         
     }
 
-    ul.sub_menu > li:hover a {
+    ul.menu > li ul.sub_menu li:hover {
+        @apply bg-secondary dark:bg-neutral rounded-md
+    }
+
+    ul.menu > li ul.sub_menu li:hover a {
         @apply text-black dark:text-secondary
     }
 
