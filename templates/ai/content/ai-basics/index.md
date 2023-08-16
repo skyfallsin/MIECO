@@ -1,8 +1,8 @@
 ## AI Basics
 
-<pre>
+<code>
 {% include "ai/content/ai-basics/_ai-basics-carousel.html" %}
-</pre>
+</code>
 
 #### What is AI in 2023?
 
