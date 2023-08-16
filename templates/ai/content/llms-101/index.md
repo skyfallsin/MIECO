@@ -1,5 +1,9 @@
 ## LLMs 101
 
+<code>
+{% include "ai/content/llms-101/_params-carousel" %}
+</code>
+
 #### What do these numbers mean in the names of models? 
 
 For example: "Vicuna-13B". The name of the model is Vicuna, and it has 13 billion parameters.
