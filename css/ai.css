@@ -128,7 +128,7 @@
 
     ul.menu > li a {
         white-space: normal !important;
-        @apply text-black dark:text-white font-semibold
+        @apply text-black dark:text-white font-medium
     }
 
 
