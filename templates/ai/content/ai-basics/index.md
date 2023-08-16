@@ -1,5 +1,9 @@
 ## AI Basics
 
+<pre>
+{% include "ai/content/ai-basics/_ai-basics-carousel.html" %}
+</pre>
+
 #### What is AI in 2023?
 
 Artificial intelligence (AI), machine learning (ML), large language models (LLMs) and related technologies and techniques have crossed the chasm from science fiction and niche research domains into widespread awareness and widely adopted products, services, and systems in 2023. 
@@ -46,7 +50,7 @@ So, in essence, a Transformer-based LLM is a cleverly designed pattern recogniti
 
 #### What are the pros & cons of using an LLM?
 
-Although LLMs have made it possible for computers to process human language  ways that have been previously difficult, if not impossible, they are not without trade-offs: 
+Although LLMs have made it possible for computers to process human language in ways that have been previously difficult, if not impossible, they are not without trade-offs: 
 
 - Pros
 	- **Improved Accuracy**: LLMs are trained on large amounts of human-readable data (e.g. written text, code, and audio) and rely on state-of-the-art techniques to determine patterns within those data. The size and pattern recognition techniques (e.g. Transformers) improve the accuracy of predictions over previous systems.

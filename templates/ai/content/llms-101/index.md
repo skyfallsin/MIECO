@@ -1,7 +1,7 @@
 ## LLMs 101
 
 <code>
-{% include "ai/content/llms-101/_params-carousel" %}
+{% include "ai/content/llms-101/_llms-101-carousel.html" %}
 </code>
 
 #### What do these numbers mean in the names of models? 
