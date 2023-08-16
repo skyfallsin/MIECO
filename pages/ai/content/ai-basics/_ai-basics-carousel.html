@@ -1,0 +1,27 @@
+{% set slides = [
+  { "alt": "Tokenization Visualization","title": "Tokenization", "description": "The LLM starts by breaking down the input text, or 'prompt', into smaller pieces known as tokens.", "image": "/img/ai/carousels/how-llm-works/tokenization.png"},
+  { "alt": "Embedding Visualization","title": "Embedding", "description": "Next, each token is converted into a numerical representation through a process called embedding", "image": "/img/ai/carousels/how-llm-works/embedding.png"},
+  { "alt": "Self-attention Visualization","title": "Self-attention", "description": "The model then adds additional information to these vectors to account for the order of words in the input. Self attention mechanisms allow the model to create context-aware representations of each word.", "image": "/img/ai/carousels/how-llm-works/self-attention.png"},
+  { "alt": "Decoding Visualization","title": "Decoding", "description": "The LLM Decoder will take the output and use it to predict the next token in the sequence.", "image": "/img/ai/carousels/how-llm-works/decoding.png"},
+  { "alt": "Output Visualization","title": "Output", "description": "Finally, the model generates a response.", "image": "/img/ai/carousels/how-llm-works/output.png"}
+]
+%}
+
+<div class="carousel rounded-box carousel-center max-w-3xl mt-4 mb-4 p-4 space-x-4 rounded-box border-2 border-gray-900 shadow-md shadow-primary">
+  {% for slide in slides %}
+  <div id="item{{loop.index}}" class="carousel-item card card-compact bg-neutral w-72 p-4">
+      <figure class="card-figure">
+          <img src="{{ slide.image }}" alt="{{slide.alt}}" />
+      </figure>
+      <div class="card-body text-neutral-content">
+          <div class="font-semibold mb-0">{{ slide.title }}</div>
+          <p>{{ slide.description }}</p>
+      </div>
+  </div>
+  {% endfor %}
+</div>
+<div class="flex justify-center w-full py-2 gap-2">
+  {% for slide in slides %}
+  <a href="#item{{loop.index}}" class="btn btn-xs">{{loop.index}}</a>
+  {% endfor %}
+</div>
