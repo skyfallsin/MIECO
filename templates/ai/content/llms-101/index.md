@@ -1,14 +1,14 @@
 ## LLMs 101
 
-<code>
-{% include "ai/content/llms-101/_llms-101-carousel.html" %}
-</code>
-
 #### What do these numbers mean in the names of models? 
 
 For example: "Vicuna-13B". The name of the model is Vicuna, and it has 13 billion parameters.
 
 #### What is a parameter? 
+
+<code>
+{% include "ai/content/llms-101/_llms-101-carousel.html" %}
+</code>
 
 An LLM parameter is a value that the model learns during training. These values are adjusted through a process called backpropagation, which involves calculating the error between the model's predictions and the actual output and adjusting the parameters to minimize this error. The number of parameters in an LLM is typically very large, often numbering in the millions or even billions. These parameters capture the relationships between different words and phrases in language, allowing the model to generate human-like output and make accurate predictions. Without these parameters, an LLM would not be able to perform natural language processing tasks at a high level of accuracy.
 

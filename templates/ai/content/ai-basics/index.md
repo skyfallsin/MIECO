@@ -1,9 +1,5 @@
 ## AI Basics
 
-<code>
-{% include "ai/content/ai-basics/_ai-basics-carousel.html" %}
-</code>
-
 #### What is AI in 2023?
 
 Artificial intelligence (AI), machine learning (ML), large language models (LLMs) and related technologies and techniques have crossed the chasm from science fiction and niche research domains into widespread awareness and widely adopted products, services, and systems in 2023. 
@@ -29,6 +25,10 @@ At Mozilla, we believe that developers should take these risks seriously and cul
 #### What exactly is an LLM?
 
 At its heart, a Transformer-based Large Language Model (LLM) is essentially a computer program designed to generate text that resembles human-written content. It leverages machine learning techniques, specifically a type of neural network called a Transformer. At a high-level, a Transformer encodes linguistic patterns in the form of statistical relationships between words, and then uses those patterns to generate text. Transformers encode these semantic patterns by ingesting examples of existing text. Now let’s dig a little deeper.
+
+<code>
+{% include "ai/content/ai-basics/_ai-basics-carousel.html" %}
+</code>
 
 **Here's how it works:**
 
