@@ -38,7 +38,7 @@ html += mapped.map(h => {
                 <a href="${url}">${h[1]}</a>
             </summary>
         <ul class='sub_menu'>`;
-    } else if (h[0] == 4) {
+    } else if (h[0] == 3) {
         return `<li><a href="${url}#${h[2]}">${h[1]}</a></li>`;
     }
 }).join('\n');   
