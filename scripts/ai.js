@@ -6,3 +6,5 @@
 
 // // The second argument can be any function that renders markdown
 // markdown.register(env, marked);
+
+console.log("ai");
