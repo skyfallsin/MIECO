@@ -30,16 +30,15 @@
     <link rel="stylesheet" href="/css/ai.css"/>
     {% endblock %}
     {% block page_js %}
-    <script type="text/javascript" src="/scripts/dark_mode.js"/>
-    <script type="module" src="/scripts/ai.js"/>
     
     {% endblock %}
     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/img/favicons/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" sizes="196x196" href="/img/favicons/favicon-196x196.png"/>
     <link rel="shortcut icon" href="/img/favicons/favicon.ico"/>
     <script type="module" src="/scripts/analytics.js"></script>
+    <script type="text/javascript" src="/scripts/dark_mode.js"></script>
     {% block header_js %}
-        <script type="text/javascript" src="/scripts/dark_mode.js"></script>
+        <script type="text/javascript" src="/scripts/ai.js"></script>
     {% endblock %}
 </head>
 <body>
@@ -83,8 +82,8 @@
             {% include "ai/_sidebar.html" %}
         {% endblock %}
     </div>
-    {% block bottom_js %}
-    <script type="module" src="/scripts/email.js"/>
+    {% block js %}
     {% endblock %}
+    <script type="module" src="/scripts/email.js"></script>
 </body>
 </html>
