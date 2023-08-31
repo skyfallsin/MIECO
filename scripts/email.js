@@ -4,25 +4,21 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-console.log("Loading email script");
-
 import {
-    checkEmailValidity,
-    clearFormErrors,
-    errorList,
-    disableFormFields,
-    enableFormFields,
-    postToEmailServer
-} from './form-utils';
+  checkEmailValidity,
+  clearFormErrors,
+  errorList,
+  disableFormFields,
+  enableFormFields,
+  postToEmailServer,
+} from "./form-utils";
 
 import "@mozilla-protocol/core/protocol/js/protocol-newsletter.min.js";
 
 let form;
 let isBuilderPage;
 let isMIECO;
-let isInnovationPage
-
-console.log("init");
+let isInnovationPage;
 
 const EmailForm = {
   handleFormError: (msg) => {
@@ -57,6 +53,11 @@ const EmailForm = {
     form.classList.add("hidden");
     const thanks = document.getElementById("newsletter-thanks");
     thanks.style.display = "block";
+
+    if (isInnovationPage) {
+      //our design specs hide the call to action title and subtext when thank you message is displayed
+      document.querySelector(".newsletter-cta").classList.add("hidden");
+    }
   },
 
   validateFields: () => {
@@ -161,7 +162,7 @@ const EmailForm = {
           postToEmailServer(
             {
               ...params,
-              website: website.value || "",
+              website: website?.value || "",
               message_id: "innovations",
             },
             EmailForm.handleFormSuccess,
@@ -174,10 +175,12 @@ const EmailForm = {
 
   handleCheckboxChange: ({ target }) => {
     const description = document.querySelector(".description");
-    if (target.checked) {
-      description.style.display = "block";
-    } else {
-      description.style.display = "none";
+    if (description) {
+      if (target.checked) {
+        description.style.display = "block";
+      } else {
+        description.style.display = "none";
+      }
     }
   },
 

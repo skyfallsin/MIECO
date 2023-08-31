@@ -251,6 +251,14 @@
     display: none;
 }
 
+#newsletter-details {
+    display: none;
+}
+
+.collaboration-description {
+    display: none;
+}
+
 .hidden {
     display: none;
 }
