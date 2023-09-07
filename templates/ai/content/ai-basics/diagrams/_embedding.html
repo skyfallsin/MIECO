@@ -1,0 +1,19 @@
+{% set slides = [
+    { "alt": "Embedding Visualization","title": "Embedding", "description": "Next, each token is converted into a numerical representation through a process called embedding.  This transformation turns each word into a high-dimensional numerical vector in order to capture the semantic relationship of words.", "image": "/img/ai/carousels/how-llm-works/embedding.png"}
+  ]
+  %}
+  
+  <div class="whitespace-nowrap overflow-x-scroll flex py-6">
+    {% for slide in slides %}
+    <div id="item{{loop.index}}" class="card card-compact bg-neutral w-72 shrink-0 grow-0 ml-6 first:ml-0">
+        <figure class="card-figure !mt-0 !mb-0">
+            <img src="{{ slide.image }}" alt="{{slide.alt}}" />
+        </figure>
+        <div class="card-body text-neutral-content whitespace-normal">
+            <div class="font-semibold mb-0">{{ slide.title }}</div>
+            <p>{{ slide.description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+  

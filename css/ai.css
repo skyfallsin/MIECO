@@ -189,7 +189,7 @@
         @apply btn btn-primary text-primary-content font-medium shadow-md shadow-accent pt-0 pb-0 pr-8 pl-8 no-underline 
     }
 
-    #content h4 {
+    #content h3 {
         @apply text-xl font-medium mt-6 mb-3 text-primary dark:text-secondary
     }
 

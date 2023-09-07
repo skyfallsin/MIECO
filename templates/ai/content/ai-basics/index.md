@@ -26,23 +26,16 @@ At Mozilla, we believe that developers should take these risks seriously and cul
 
 At its heart, a Transformer-based Large Language Model (LLM) is essentially a computer program designed to generate text that resembles human-written content. It leverages machine learning techniques, specifically a type of neural network called a Transformer. At a high-level, a Transformer encodes linguistic patterns in the form of statistical relationships between words, and then uses those patterns to generate text. Transformers encode these semantic patterns by ingesting examples of existing text. Now let’s dig a little deeper.
 
+
+#### Here's how it works:
+
 <code>
-{% include "ai/content/ai-basics/_ai-basics-carousel.html" %}
+{% include "ai/content/ai-basics/diagrams/_tokenization.html" %}
+{% include "ai/content/ai-basics/diagrams/_embedding.html" %}
+{% include "ai/content/ai-basics/diagrams/_self_attention.html" %}
+{% include "ai/content/ai-basics/diagrams/_decoder.html" %}
+{% include "ai/content/ai-basics/diagrams/_output.html" %}
 </code>
-
-**Here's how it works:**
-
-The LLM starts by breaking down the input text, or "prompt," into smaller pieces known as tokens. These could be as small as one character or as large as one word. 
-
-Next, each token is converted into a numerical representation through a process called embedding. This transformation turns each word into a high-dimensional vector in order to capture the semantic relationship of words.
-
-The model then adds additional information to these vectors to account for the order of words in the input. This is crucial because the meaning of a sentence can change dramatically based on word order.
-
-Now comes the real magic of the Transformer architecture: self-attention mechanisms. These allow the model to weigh the importance of different words when predicting the next word in the sentence. This way, the model can create context-aware representations of each word.
-
-If the LLM includes a decoder component, it will take the output from the encoder and use it, along with the previously generated tokens, to predict the next token in the sequence.
-
-Finally, the model generates a response, one token at a time, until it reaches a certain length or produces a termination token. 
 
 All these steps involve complex mathematical operations and transformations. But fundamentally, what the model is doing is learning patterns in the data it was trained on, and using those patterns to generate new text that fits within the same patterns.
 
