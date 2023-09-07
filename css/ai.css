@@ -227,9 +227,8 @@
 /* blue bar above the page headers*/
 #content h2::before {
     content: '';
-    display: block;
     height: 0.3125rem;
-    @apply border-t-4 border-primary my-auto w-16 mb-2;
+    @apply border-t-4 border-primary my-auto w-16 mb-2 block;
     border-color: #4579FF; /* MH: not sure why tailwind adds some weird HSL value that overrides our primary color */
 }
 
@@ -239,7 +238,7 @@
 
 
 .email-checkbox {
-    width: 24px; height: 24px;
+    @apply w-6 h-6;
 }
 
 .email-submit {
@@ -248,17 +247,17 @@
 }
 
 #newsletter-thanks {
-    display: none;
+    @apply hidden
 }
 
 #newsletter-details {
-    display: none;
+    @apply hidden
 }
 
 .collaboration-description {
-    display: none;
+    @apply hidden
 }
 
 .hidden {
-    display: none;
+    @apply hidden
 }
