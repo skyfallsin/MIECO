@@ -5,13 +5,13 @@ WRITE_PATH=$SOURCE_PATH # replace if you want to write to a different path
 mkdir -p $WRITE_PATH
 echo ">>>> Building AI Guide from $SOURCE_PATH..."
 
-# test if command `marked` exists
-if ! command -v marked &> /dev/null
-then
-    echo "marked could not be found"
-    echo "Installing marked..."
-    npm install -g marked
-fi
+# # test if command `marked` exists
+# if ! command -v marked &> /dev/null
+# then
+#     echo "marked could not be found"
+#     echo "Installing marked..."
+#     npm install marked@6.0.0
+# fi
 
 find $SOURCE_PATH -name "*.md" | while read -r file; 
     do echo ">>>> Building $file"; 

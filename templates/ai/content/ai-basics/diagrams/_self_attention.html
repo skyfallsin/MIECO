@@ -1,0 +1,19 @@
+{% set slides = [
+    { "alt": "Self-attention Visualization","title": "Self-attention", "description": "'Self attention' mechanisms allow the model to create context-aware representations of each word - they weigh the importance of each word when predicting the next word in a sentence.", "image": "/img/ai/carousels/how-llm-works/self-attention.png"}
+  ]
+  %}
+  
+  <div class="whitespace-nowrap overflow-x-scroll flex py-6">
+    {% for slide in slides %}
+    <div id="item{{loop.index}}" class="card card-normal bg-neutral w-72 shrink-0 grow-0 first:ml-0">
+        <figure class="card-figure !mt-0 !mb-0">
+            <img src="{{ slide.image }}" alt="{{slide.alt}}" />
+        </figure>
+        <div class="card-body text-neutral-content whitespace-normal">
+            <div class="font-semibold mb-0">{{ slide.title }}</div>
+            <p>{{ slide.description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+  

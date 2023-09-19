@@ -35,10 +35,10 @@ html += mapped.map(h => {
     if (h[0] == 2) {
         return `<details closed>
             <summary>
-                <a href="${url}">${h[1]}</a>
+                ${h[1]}
             </summary>
         <ul class='sub_menu'>`;
-    } else if (h[0] == 4) {
+    } else if (h[0] == 3) {
         return `<li><a href="${url}#${h[2]}">${h[1]}</a></li>`;
     }
 }).join('\n');   

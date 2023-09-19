@@ -10,6 +10,8 @@ module.exports = {
   content: [
     "./pages/ai/**/*.{html,js}",
     "./templates/base-ai.html",
+    "./templates/ai/_sidebar.html",
+    "./templates/ai/content/**/*.{html,js}",
     "./templates/ai/**/*.{html,js}",
   ],
   theme: {
